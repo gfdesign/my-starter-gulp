@@ -1,0 +1,40 @@
+// Set up the URL for Bootstrap icons (relative to default.css)
+// $icon-font-path: "../../skins/common/bootstrap3/fonts/";
+// Set up the URL for FontAwesome icons (relative to default.css)
+// $fa-font-path: "../../skins/common/fontawesome4/fonts";
+
+// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+$bg-color: red;
+$color: #fff;
+
+body {
+	background: $bg-color;
+	color: $color;
+}
+
+.red {
+	background: red;
+	padding: 10px;
+}
+
+.blue {
+	background: blue;
+	padding: 15px;
+}
+
+.sf-menu {
+	a {
+		color: yellow;
+	}
+}
+
+#Footer_wrapper {
+	color: green;
+}
+
+.EditorPanel {
+	background-color: pink;
+	padding: 10px;
+}
