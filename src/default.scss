@@ -6,35 +6,10 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
-$bg-color: red;
+$bg-color: #288187;
 $color: #fff;
 
 body {
 	background: $bg-color;
 	color: $color;
-}
-
-.red {
-	background: red;
-	padding: 10px;
-}
-
-.blue {
-	background: blue;
-	padding: 15px;
-}
-
-.sf-menu {
-	a {
-		color: yellow;
-	}
-}
-
-#Footer_wrapper {
-	color: green;
-}
-
-.EditorPanel {
-	background-color: pink;
-	padding: 10px;
 }

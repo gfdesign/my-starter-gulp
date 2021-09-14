@@ -19,7 +19,6 @@ gulp.task('sass', () => {
     .src('./src/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(plumber())
-    .pipe(sourcemaps.write("."))
     .pipe(
       sass({
         outputStyle: production ? 'compressed' : 'expanded'
@@ -28,6 +27,7 @@ gulp.task('sass', () => {
     )
     .pipe(postcss(cssPlugins))
     .pipe(gulp.dest('.'))
+    .pipe(sourcemaps.write("."))
     .pipe(stream());
 });
 
@@ -40,8 +40,8 @@ gulp.task('clean', () => {
         content: ['*.html'],
         safelist: [/^wrapper/],
         whitelist: [
-          'red',
           'text-center',
+          'text-right',
           /^wrapper$/,
         ],
         whitelistPatternsChildren: [/^sf-menu$/, /^EditorPanel$/, /^wrapper$/]
